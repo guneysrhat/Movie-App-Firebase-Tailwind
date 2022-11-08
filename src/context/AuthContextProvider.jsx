@@ -6,8 +6,8 @@ export const AuthContext = createContext()
 
 const AuthContextProvider = ({children}) => {
   return (
-    <AuthContext.Provider>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={null}>{children}</AuthContext.Provider>
   )
 }
 
-export default AuthContextProvider
+export default AuthContextProvider;
